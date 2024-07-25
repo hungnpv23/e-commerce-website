@@ -59,7 +59,7 @@ export const Login = () => {
         <div className='grid grid-cols-1 py-12 lg:grid-cols-5 lg:py-32 lg:pr-10'>
           <div className='lg:col-span-2 lg:col-start-4'>
             <form className='p-10 rounded bg-white shadow-sm' onSubmit={onSubmit} noValidate>
-              <div className='text-2xl'>Login</div>
+              <div className='text-2xl'>Đăng nhập</div>
               <Input
                 type='email'
                 register={register}
@@ -88,7 +88,7 @@ export const Login = () => {
                 </Button>
               </div>
               <div className='flex items-center justify-center mt-8'>
-                <span className='text-gray-400'>Do you have an account yet?</span>
+                <span className='text-gray-400'>Bạn mới biết đến Shopee?</span>
                 <Link className='text-red-600 ml-1' to='/register'>
                   Đăng ký
                 </Link>

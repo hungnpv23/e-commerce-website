@@ -72,7 +72,7 @@ export const Register = () => {
         <div className='grid grid-cols-1 py-12 lg:grid-cols-5 lg:py-32 lg:pr-10'>
           <div className='lg:col-span-2 lg:col-start-4'>
             <form className='p-10 rounded bg-white shadow-sm' onSubmit={onSubmit} noValidate>
-              <div className='text-2xl'>Register</div>
+              <div className='text-2xl'>Đăng ký</div>
 
               <Input
                 type='email'
@@ -113,9 +113,9 @@ export const Register = () => {
                 </Button>
               </div>
               <div className='flex items-center justify-center mt-8'>
-                <span className='text-gray-400'>You have an account already?</span>
+                <span className='text-gray-400'>Bạn đã có tài khoản?</span>
                 <Link className='text-red-600 ml-1' to='/login'>
-                  Login
+                  Đăng Nhập
                 </Link>
               </div>
             </form>
