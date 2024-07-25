@@ -3,7 +3,7 @@ import Popover from '../Popover'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { locales } from 'src/i18n/i18n'
-import { logout } from 'src/apis/auth.api'
+import authApi from 'src/apis/auth.api'
 import { useContext } from 'react'
 import { AppContext } from 'src/context/app.context'
 import path from 'src/constants/path'
@@ -19,7 +19,7 @@ const NavHeader = () => {
   }
 
   const logoutMutation = useMutation({
-    mutationFn: logout,
+    mutationFn: authApi.logout,
     onSuccess: () => {
       setAuthenticated(false)
       setProfile(null)
